@@ -6,6 +6,15 @@
     "configurations": [
         {
             "type": "node",
+            "request": "attach",
+            "name": "Attach to Remote",
+            "address": "nodepi.local",
+            "port": 9229,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/home/pi/repos/nodejs/sample/"
+        },
+        {
+            "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/test.js"
